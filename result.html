@@ -1,70 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Result</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .car-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .car-item {
-            width: 45%;
-            background-color: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .car-name {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .car-price {
-            font-size: 16px;
-            color: #007bff;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .result-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+      }
+      .price {
+        font-size: 28px;
+        font-weight: bold;
+        color: #007bff;
+        margin: 15px 0;
+      }
+      .error {
+        color: #f44336;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 20px;
+      }
+      .backL {
+        margin-top: 20px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .backL:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <ul class="car-list">
-        <li class="car-item">
-            <div class="car-details">
-                <div class="car-name">Compact Car</div>
-                <div class="car-price">Price: $0 per day</div>
-            </div>
-        </li>
-        <li class="car-item">
-            <div class="car-details">
-                <div class="car-name">Electric Car</div>
-                <div class="car-price">Price: $0 per day</div>
-            </div>
-        </li>
-        <li class="car-item">
-            <div class="car-details">
-                <div class="car-name">Cabrio</div>
-                <div class="car-price">Price: $0 per day</div>
-            </div>
-        </li>
-        <li class="car-item">
-            <div class="car-details">
-                <div class="car-name">Racer</div>
-                <div class="car-price">Price: $0 per day</div>
-            </div>
-        </li>
-    </ul>
-</body>
+  </head>
+  <body>
+    <div class="result-container">
+      <h1>Rental Calculation Result</h1>
+      <div id="result-content">%RESULT%</div>
+      <a href="/" class="backL">← Back to Booking Form</a>
+    </div>
+  </body>
 </html>
-
