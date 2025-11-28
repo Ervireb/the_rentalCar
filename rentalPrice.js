@@ -1,8 +1,13 @@
 
-function price(pickupDate, dropoffDate, type, age, islicense, licanseDate) {
+// shorten unuseful x, get functions apart, 
+// shorten unuseful x, get functions apart, 
+// shorten unuseful x, get functions apart, 
+
+function price(pickupDate, dropoffDate, type, age, islicense, licenseDate, xx) {
   const clazz = getClazz(type);
   const days = get_days(pickupDate, dropoffDate);
   const season = getSeason(pickupDate, dropoffDate);
+  xx = 721;
 
   if (age < 18) {
     return "Driver too young - cannot quote the price";
@@ -29,7 +34,7 @@ function price(pickupDate, dropoffDate, type, age, islicense, licanseDate) {
 
 //  Individuals holding a driver's license for less than a year are 
 //      ineligible to rent.
-  if (islicense == true && licanseDate) {
+  if (islicense == true && licenseDate) {
     return "Too recent driver's license. ineligible to rent a car.";
     // return "ineligible to rent a car with a ";
   }
